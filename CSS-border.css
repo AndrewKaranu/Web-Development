@@ -1,0 +1,48 @@
+#firstp{
+	border-width: 2px;
+	border-style: solid;
+	border-color: teal;
+}
+
+#secondp{
+/*border-width: 3px;
+border-style: dotted;
+border-color: indianred;*/
+border:2px dotted indianred;
+}
+
+#thirdp{
+/*border-width: medium;
+border-style: dashed;
+border-color: green;*/
+border: medium dashed green;
+
+}
+
+table{
+	font-family: Georgia;
+	width:100%;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+td{
+font-family: Georgia;
+border: 3px solid	; black;
+
+padding: 10px;
+
+}
+tr:nth-child(odd){
+background-color: #4CE6BA;
+
+}
+
+th{
+text-align: left;
+border: 3px solid; black;
+border-collapse: collapse;
+background-color: #169873;
+}
