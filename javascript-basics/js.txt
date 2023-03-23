@@ -1,0 +1,93 @@
+// Summary on java-script basics
+// A variable can be declared using var, let or const
+// To assign a value to a variable, use the assignment opertor (=)
+// There are two categories of data-types in javascript
+
+
+// Javascript is used to create dynamic HTML by making changes in the DOM tree. With JS we can manipulate almost everything such as content, styles and even add new elements and remove the existing ones.
+
+// DOM is  a tree like structure that is created when a html document is loaded in a browser. Every node of a DOM tree reprsents a HTML element. DOM can be manipulated to make dynamic changes in a HTML document
+
+// HTML Events and JavaScript
+// HTML events are attributes that are used to make something happen. Eg a button click popping a message
+
+// Another examples is popping a message when page loads or when the input changes.
+
+// HTML events are very important because they are used to convert the static HTML elements into dynamic. One of the most important uses of this event is that JS functions can betriggered using them 
+
+// Although a very basic DOM manipulation can be done using HTML serious manipulation is done using functions. This is why HTML events are very important
+
+// Thye are several HTML elements which are divided into different categories:
+// Keyboard events, Mouse events, Drag events, Form events. Windows events, Media events and clipboard events
+
+// They are several events in each of theses categories. Our main focus is to understand how to use these events to trigger sth
+
+// Triggering alert()
+// The alert function is a pop up that appears on the screen with a message
+
+// Lets see how we can trigger a pop up using the onclick mouse event
+
+// mouse events are one of the most commonly used mouse events. These events are triggered when the user does something with the mouse. For example clicking on something, double clicking on something, hovering over something etc
+
+// The on click event is the most basic HTML event. As the name suggests this event triggers something when an element is clicked on
+
+// The value of a HTML event is always written inside quotes.
+// The value will be triggered when the button is clicked
+
+
+// Triggering a function 
+// In the real time, events are used to trigger JS functions. Generally complicated things such as DOM manipulation require some sort of coding logic and there can be multiple lines of code. It is not possible to write all these lines in the HTML and that is why JS function wre used
+
+// Commonly used HTML Events
+// 1. Mouse Events-
+            ->onclick- triggers in the single click of the mouse
+            ->ondblclick- triggers on the double click of the mouse
+            ->onmousehover - triggers when the mouse moves over an element
+            ->onwheel - triggers when the wheel of the mouse moves over an element
+
+    2.  Keyboard Events-
+            ->onkeydown- triggers when a key is being pressed
+            ->onkeypress- triggers when a keu in being pressed
+            ->onkeyup- triggers when a key is released
+
+    3. Window Events-
+            ->onload- triggers when a window is completely loaded
+            ->onunload- triggers when a window is closed
+            ->onresize- triggers when a window is resized
+
+    4. Form Events
+            ->onchange- triggers when the values of an element is changed
+            ->onsubmit- triggers when a formn is sibmitted4
+            ->onreset- triggers when a form is reser
+
+    5. Drag Events
+            ->ondrag- triggers when a element is dragged
+            ->ondrop- triggers when an element that is being dragged is dropped
+
+Finding Elements-
+Till now, we have discussed JS, DOM and HTML events. These three concepts are necessary if you want to understand DOM manipulation properly. There are two important concepts used you 
+  ->finding element using various methods
+  ->innerHTML property
+
+innerHTML property
+To manipulate a HTML element or its value, you first need to find it. We can not do anything if we do not have the link of the HTML elements in the JS of the HTML file. The innerHTML property is used to get the access to content of the HTML elements. This method will not only find the element but its value is also accessed.
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+    <p>This is a Paragraph</p>
+<body>
+</html>
+
+In the methods we can find the <p> tag but the content in <p> is accessed using the inner html property
+
+Ways to find Elements
+Theyre 3 ways of finding HTML elements:
+1. document.getElementbyId()
+2.document.getElementsbyTagName()
+3.document.getElementsbyclass()
+
+document.getElementbyId()- It is the most common way of finding HTML elements. The value passed to function the is the ID of the element you are looking to find
+
+In the html the id of the p tag is passed to the method  and the value is stored in a variable named element. The console statement in the next line prints the value of the element. The value in the console appears after clicking the paragraph and it is nothing but the <p> itself. To access the content we will use the inner HTML property
+

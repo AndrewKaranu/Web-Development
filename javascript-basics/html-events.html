@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body>
+    <button onclick="alert('You clicked in the button')">Click Here</button>
+    <br>
+    <label for="input" onclick="alert('Please insert some text in the input box')">First name:</label>
+    <input type="text">
+    <br>
+
+    <button onclick="message()">Click Here</button>
+
+    <h2 id="heading1" onclick="demo2()" style="text-align: center; color: teal;">Ways of finding <strong>HTML</strong> Elements</h2>
+    <ol>
+        <li>document.getElementByid()</li>
+        <li>document.getElementByTagName()</li>
+        <li>document.getElementByClassName()</li>
+    </ol>
+
+    <h3>document.getElementByid()</h3>
+    <p id="para1" onclick="demo()">This paragraph is Found Using document.getElementByid()</p>
+
+    <script>
+        function message(){
+            return alert("You clicked on me")
+        }
+    
+        function demo(){
+            var element = document.getElementById("para1").innerHTML
+            console.log(element)
+        }
+        function demo2(){
+            var element = document.getElementById("heading1").innerHTML
+            console.log(element)
+        }
+    </script>
+</body>
+</html>
+
